@@ -26,13 +26,14 @@ Already included in repo:
 After installing all dependencies, use the tasks in `.vscode/tasks.json` to quickly setup and build. 
 Or use the following commands to 
 
-To setup (run once):
+To setup on windows (run once):
 ```
-meson build
+meson --buildtype release --backend vs2022 build-msvc-x64
 ```
+MAKE SURE YOU HAVE AN UPDATED WINDOWS SDK!!
 
 To build:
 ```
-meson install -C build
+Open the sln in the build-msvc-x64 folder and build for x64 Release, copy the core folder from the root dir to your build-msvc-x64/src folder!
 ```
 
